@@ -1,0 +1,14 @@
+<nav class="site-nav">
+    <div class="container">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <ul class="nav-menu">
+        {% for item in site.navigation %}
+          <li class="nav-item">
+            <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
