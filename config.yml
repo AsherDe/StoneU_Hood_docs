@@ -5,7 +5,7 @@ url: "https://asherde.github.io/StoneU_Hood_docs"
 baseurl: "/StoneU_Hood_docs"  # 如果是用户页面则不需要这行
 
 # 主题设置(如果使用GitHub自带主题)
-theme: minimal-mistakes-jekyll  # 替换为你选择的主题
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"  # 替换为你选择的主题
 
 # 导航设置
 navigation:
@@ -27,6 +27,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 # 排除文件
 exclude:
